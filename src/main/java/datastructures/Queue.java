@@ -35,7 +35,14 @@ public class Queue {
             throw new RuntimeException("Queue is Empty");
         }
         int item = queue[left];
-        queue[left++] = null;
+        shift();
+        right--;
         return item;
+    }
+
+    private void shift() {
+        for (int i = 0; i < right; i++) {
+            queue[i] = queue[i + 1];
+        }
     }
 }

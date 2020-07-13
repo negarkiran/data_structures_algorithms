@@ -58,4 +58,18 @@ public class QueueTest {
         queue.remove();
     }
 
+    @Test
+    public void shouldAllowToAddItemsWhenQueueIsEmpty() {
+        queue.add(1);
+        queue.add(2);
+        queue.remove();
+        queue.add(3);
+        queue.remove();
+        queue.add(4);
+
+        assertEquals(2, Arrays.stream(queue.get()).filter(Objects::nonNull).count());
+        assertEquals(3, queue.remove());
+        assertEquals(4, queue.remove());
+    }
+
 }
