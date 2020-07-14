@@ -1,5 +1,6 @@
-package datastructures;
+package datastructures.queue;
 
+import datastructures.queue.Queue;
 import org.junit.Before;
 import org.junit.Test;
 
