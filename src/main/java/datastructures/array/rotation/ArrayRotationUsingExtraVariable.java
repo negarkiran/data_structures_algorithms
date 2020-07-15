@@ -5,11 +5,11 @@ import java.util.Arrays;
 //Time complexity : O(n * d)
 //Auxiliary Space : O(1)
 
-public class ArrayRotationUsingExtraSpace {
+public class ArrayRotationUsingExtraVariable {
     private int[] numbers;
     private int size;
 
-    public ArrayRotationUsingExtraSpace(int n) {
+    public ArrayRotationUsingExtraVariable(int n) {
         this.numbers = new int[n];
         this.size = 0;
     }
