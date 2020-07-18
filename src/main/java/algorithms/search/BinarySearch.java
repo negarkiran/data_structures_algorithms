@@ -1,5 +1,7 @@
 package algorithms.search;
 
+//Time Complexity: Theta(Logn).
+//Works for Sorted array
 public class BinarySearch {
     public int search(int[] array, int number) {
         int n = array.length;
