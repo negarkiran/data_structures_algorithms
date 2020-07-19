@@ -1,5 +1,7 @@
 package algorithms.sort;
 
+//Time Complexity O(n*n)
+//In each iteration maximum element will be moved to right
 public class BubbleSort {
     public void sort(int[] input) {
         int n = input.length;
