@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Stream;
+
+//Given a string array arr[] as input, the task is to print the words sorted by number of distinct characters that occur in the word, followed by length of word.
+//If two words have same number of distinct characters, the word with more total characters comes first.
+//If two words have same number of distinct characters and same length, the word that occurs earlier in the sentence must be printed first.
 
 public class DistinctCharacter {
     public int getDistinctCharacterCount(String one) {
