@@ -5,6 +5,7 @@
 * Stack
 * Queue
 * Arrays
+* Linked List
 
 ## Algorithms
 * Search
