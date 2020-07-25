@@ -1,4 +1,4 @@
-package datastructures.array.distinctcharacter;
+package algorithms.distinctcharacter;
 
 import java.util.Arrays;
 import java.util.Comparator;

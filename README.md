@@ -1,4 +1,4 @@
-# Data Strcutures And Algorithms
+# Data Structures And Algorithms
 > This repository contains the programs related to different datastructure and algorithm problems
 
 ## Data Structures

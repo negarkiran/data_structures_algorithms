@@ -1,5 +1,6 @@
 package datastructures.array.distinctcharacter;
 
+import algorithms.distinctcharacter.DistinctCharacter;
 import org.junit.Before;
 import org.junit.Test;
 
