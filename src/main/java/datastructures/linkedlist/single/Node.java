@@ -1,10 +1,12 @@
-package datastructures.linkedlist;
+package datastructures.linkedlist.single;
 
-public class Node {
-    private int data;
+
+//Used for Singly LinkedList
+public class Node <T> {
+    private T data;
     private Node next;
 
-    public int getData() {
+    public T getData() {
         return data;
     }
 
@@ -16,7 +18,11 @@ public class Node {
         this.next = next;
     }
 
-    public Node(int data) {
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public Node(T data) {
         this.data = data;
         this.next = null;
     }

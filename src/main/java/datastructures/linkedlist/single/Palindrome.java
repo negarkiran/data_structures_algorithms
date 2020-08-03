@@ -1,4 +1,4 @@
-package datastructures.linkedlist;
+package datastructures.linkedlist.single;
 
 public class Palindrome {
     private LinkedList linkedList;
@@ -34,7 +34,8 @@ public class Palindrome {
         secondHalf = reverseUsingIteration(slowPointer);
 
         while (firstHalf != null && secondHalf != null) {
-            if(Integer.valueOf(firstHalf.getData()) != Integer.valueOf(secondHalf.getData())) {
+            if(Integer.valueOf(firstHalf.getData().toString())
+                    != Integer.valueOf(secondHalf.getData().toString())) {
                 return false;
             }
             secondHalf = secondHalf.getNext();

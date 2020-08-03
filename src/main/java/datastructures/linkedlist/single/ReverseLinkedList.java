@@ -1,4 +1,4 @@
-package datastructures.linkedlist;
+package datastructures.linkedlist.single;
 
 public class ReverseLinkedList {
     private LinkedList linkedList;
