@@ -1,5 +1,7 @@
 package algorithms.search;
 
+//Works for Sorted array
+//Time Complexity : O(sqrt(n))
 public class JumpSearch {
     public int search(int[] array, int item) {
         //Find steps to jump

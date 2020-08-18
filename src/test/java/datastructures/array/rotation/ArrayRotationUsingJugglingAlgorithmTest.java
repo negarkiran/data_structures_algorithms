@@ -31,6 +31,6 @@ public class ArrayRotationUsingJugglingAlgorithmTest {
 
         arrayRotationUsingJugglingAlgorithm.rotateLeft(3);
 
-        assertEquals(5, arrayRotationUsingJugglingAlgorithm.getNumbers()[0]);
+        assertEquals(4, arrayRotationUsingJugglingAlgorithm.getNumbers()[0]);
     }
 }
