@@ -8,7 +8,7 @@ import static org.junit.Assert.assertTrue;
 public class TwoSumOnASortedArrayTest {
 
     @Test
-    public void shouldFindSumofTwoElementsIsAvailableInSortedArray() {
+    public void shouldFindSumOfTwoElementsIsAvailableInSortedArray() {
         TwoSumOnASortedArray twoSumOnASortedArray = new TwoSumOnASortedArray();
         int[] array = {-8, 1, 4, 6, 10, 45};
 
@@ -16,7 +16,7 @@ public class TwoSumOnASortedArrayTest {
     }
 
     @Test
-    public void shouldNotFindSumofTwoElementsIsAvailableInSortedArray() {
+    public void shouldNotFindSumOfTwoElementsIsAvailableInSortedArray() {
         TwoSumOnASortedArray twoSumOnASortedArray = new TwoSumOnASortedArray();
         int[] array = {-8, 1, 4, 6, 10, 45};
 

@@ -29,7 +29,7 @@ public class ArrayRotationUsingJugglingAlgorithmTest {
         arrayRotationUsingJugglingAlgorithm.add(11);
         arrayRotationUsingJugglingAlgorithm.add(12);
 
-        arrayRotationUsingJugglingAlgorithm.rotateLeft(3);
+        arrayRotationUsingJugglingAlgorithm.rotateLeft(4);
 
         assertEquals(4, arrayRotationUsingJugglingAlgorithm.getNumbers()[0]);
     }
