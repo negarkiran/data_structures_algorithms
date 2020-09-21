@@ -15,7 +15,7 @@ public class InsertionSortTest {
     }
 
     @Test
-    public void shouldSortArrayUsingBubbleSort() {
+    public void shouldSortArray() {
         int[] input = {98,71,99,22,15,17,31};
         insertionSort.sort(input);
         assertEquals(99, input[6]);
