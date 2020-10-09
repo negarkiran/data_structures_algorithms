@@ -2,8 +2,8 @@ package datastructures.trees;
 
 public class Node<T> {
     private T data;
-    private Node prev;
-    private Node next;
+    private Node<T> prev;
+    private Node<T> next;
 
     public Node(T data) {
         this.data = data;
@@ -19,19 +19,19 @@ public class Node<T> {
         this.data = data;
     }
 
-    public Node getPrev() {
+    public Node<T> getPrev() {
         return prev;
     }
 
-    public void setPrev(Node prev) {
+    public void setPrev(Node<T> prev) {
         this.prev = prev;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
 }

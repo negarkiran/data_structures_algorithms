@@ -2,12 +2,12 @@ package datastructures.trees.traversal;
 
 import datastructures.trees.Node;
 
-public class PreOrderTraversal {
+public class PostOrderTraversal {
 
-    public void preOrder(Node<Integer> node) {
+    public void postOrder(Node<Integer> node) {
         if (node == null) return;
+        postOrder(node.getPrev());
+        postOrder(node.getNext());
         System.out.println(node.getData());
-        preOrder(node.getPrev());
-        preOrder(node.getNext());
     }
 }
