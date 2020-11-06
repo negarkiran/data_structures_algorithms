@@ -4,17 +4,17 @@ package datastructures.linkedlist.single;
 //Used for Singly LinkedList
 public class Node <T> {
     private T data;
-    private Node next;
+    private Node<T> next;
 
     public T getData() {
         return data;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
 
