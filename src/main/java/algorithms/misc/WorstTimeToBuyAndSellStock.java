@@ -1,6 +1,6 @@
 package algorithms.misc;
 
-public class BestTimeToBuyAndSellStock {
+public class WorstTimeToBuyAndSellStock {
     public int buyAndSell(int[] array) {
         int n = array.length;
 
@@ -9,15 +9,15 @@ public class BestTimeToBuyAndSellStock {
         if (n == 1)
             return array[0];
 
-        int min = array[0];
-        int max = 0;
+        int min = 0;
+        int max = array[0];
         for (int i = 1; i < n; i++) {
-            if (array[i] > min) {
-                max = Math.max(array[i] - min, max);
+            if (array[i] < max) {
+                min = Math.min(array[i] - max, min);
             } else {
-                min = array[i];
+                max = array[i];
             }
         }
-        return max;
+        return min;
     }
 }
