@@ -16,13 +16,13 @@ public class ArrayRotationUsingExtraVariableTest {
 
     @Test
     public void shouldRotateArrayBySpecifiedNumber() {
-        arrayRotationUsingExtraVariable.add(1);
-        arrayRotationUsingExtraVariable.add(2);
         arrayRotationUsingExtraVariable.add(3);
-        arrayRotationUsingExtraVariable.add(4);
-        arrayRotationUsingExtraVariable.add(5);
+        arrayRotationUsingExtraVariable.add(8);
+        arrayRotationUsingExtraVariable.add(9);
+        arrayRotationUsingExtraVariable.add(7);
+        arrayRotationUsingExtraVariable.add(6);
 
-        arrayRotationUsingExtraVariable.rotate(4);
+        arrayRotationUsingExtraVariable.rotate(3);
 
         assertEquals(5, arrayRotationUsingExtraVariable.getRotatedArray()[0]);
     }

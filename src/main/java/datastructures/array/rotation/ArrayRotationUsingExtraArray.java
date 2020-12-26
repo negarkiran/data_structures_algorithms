@@ -25,13 +25,20 @@ public class ArrayRotationUsingExtraArray {
     }
 
     public void rotate(int k) {
-        int j=0;
-        for (j = 0; j < size-k; j++) {
-            shifted[j] = numbers[j+k];
+        k = k % numbers.length;
+
+        if (k == 0) {
+            shifted = Arrays.copyOf(numbers, shifted.length);
+            return;
+        }
+
+        int j = 0;
+        for (j = 0; j < size - k; j++) {
+            shifted[j] = numbers[j + k];
         }
 
         for (int i = 0; i < k; i++) {
-            shifted[j] = numbers[i];
+            shifted[j++] = numbers[i];
         }
     }
 }

@@ -7,8 +7,8 @@ public class Anagram {
         }
         int asciiOne=0, asciiTwo = 0;
         for (int i = 0; i < one.length(); i++) {
-            asciiOne+= (int) one.charAt(i);
-            asciiTwo+= (int) two.charAt(i);
+            asciiOne+= one.charAt(i);
+            asciiTwo+= two.charAt(i);
         }
         return asciiOne == asciiTwo;
     }

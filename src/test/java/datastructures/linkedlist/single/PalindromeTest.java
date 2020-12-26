@@ -1,7 +1,5 @@
 package datastructures.linkedlist.single;
 
-import datastructures.linkedlist.single.Node;
-import datastructures.linkedlist.single.Palindrome;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
