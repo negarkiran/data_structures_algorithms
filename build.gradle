@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.0-RC'
 }
 
 group 'com.kiran'
@@ -11,5 +12,9 @@ repositories {
 
 dependencies {
     implementation 'org.jetbrains:annotations:20.1.0'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
+kotlin {
+    jvmToolchain(11)
 }

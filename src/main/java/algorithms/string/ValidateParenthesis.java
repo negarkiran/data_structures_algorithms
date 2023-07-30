@@ -20,6 +20,8 @@ public class ValidateParenthesis {
                 stack.pop();
             } else if (input.charAt(i) == '}' && stack.peek() == '{') {
                 stack.pop();
+            } else {
+                return false;
             }
         }
 

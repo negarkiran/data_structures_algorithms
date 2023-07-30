@@ -52,4 +52,33 @@ public class ThreeSum {
 
         return list;
     }
+
+    public List<List<Integer>> threeSumV1(Integer[] array) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        Arrays.sort(array);
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (i > 0 && array[i] == array[i-1]) continue;
+
+            int left = i + 1, right = array.length - 1;
+
+            while (left<right) {
+                if (array[i] + array[left] + array[right] == 0) {
+                    result.add(List.of(array[i], array[left], array[right]));
+                    left++;
+                    right--;
+
+                    while (left < right && array[left] == array[left-1]) left++;
+                    while (left < right && array[right] == array[right+1]) right--;
+                } else if (array[i] + array[left] + array[right] < 0) {
+                    left++;
+                } else if (array[i] + array[left] + array[right] > 0) {
+                    right--;
+                }
+            }
+        }
+        return result;
+    }
 }
