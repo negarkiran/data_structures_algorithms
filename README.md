@@ -6,6 +6,7 @@
 * Queue
 * Arrays
 * Linked List
+* Tree
 
 ## Algorithms
 * Search
